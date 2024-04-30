@@ -22,15 +22,41 @@
     <main class="mdl-layout__content">
       <form action="#" class="text-box">
         <div style="position: relative; left: 20px;">
-        <img src="./BCPTPizza.png" alt="BaconPotatoPizza">
-        <h4>Bacon Potato Pizza</h4>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-          <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="L" checked>
-          <span class="mdl-radio__label">L size(20.99$)</span>
+          <div>
+            <img src="./CSPizza.png" alt="CheesePizza" style="width: 20%; height: 20%;">
+            <h4>Cheese Pizza</h4>
+            <p>(L16$) (XL20$)</p>
+            <img src="./BCPTPizza.png" alt="BaconPotatoPizza" style="width: 20%; height: 20%;">
+            <h4>Bacon Potato Pizza</h4>
+            <p>(L20.99$) (XL24.99$)</p>
+            <img src="./PAPizza.png" alt="PineapplePizza" style="width: 20%; height: 20%;">
+            <h4>Pineapple Pizza</h4>
+            <p>(L18.89$) (XL22.89$)</p>
+          </div>
+          <hr />
+          <br />
+          <p>Choose the Size</p>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pizzaType-1">
+            <input type="radio" id="pizzaType-1" class="mdl-radio__button" name="Types" value="C" checked>
+            <span class="mdl-radio__label">Cheese Pizza</span>
+          </label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pizzaType-2">
+            <input type="radio" id="pizzaType-2" class="mdl-radio__button" name="Types" value="B" >
+            <span class="mdl-radio__label">Bacon Potato Pizza</span>
+          </label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pizzaType-3">
+            <input type="radio" id="pizzaType-3" class="mdl-radio__button" name="Types" value="P">
+            <span class="mdl-radio__label">Pineapple Pizza</span>
+          </label>
+          <br />
+          <hr />
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="size-1">
+          <input type="radio" id="size-1" class="mdl-radio__button" name="options" value="L" checked>
+          <span class="mdl-radio__label">L size</span>
         </label>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-          <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="XL">
-          <span class="mdl-radio__label">XL size(25.99$)</span>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="size-2">
+          <input type="radio" id="size-2" class="mdl-radio__button" name="options" value="XL">
+          <span class="mdl-radio__label">XL size</span>
         </label>
         <hr />
         <br />
@@ -49,20 +75,21 @@
           <span class="mdl-checkbox__label">Extra potato(+1.00$)</span>
         </label>
         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
-          <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" checked>
+          <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" >
           <span class="mdl-checkbox__label">Extra pineapple(+1.20$)</span>
         </label>
+        <p id="test"></p>
+        <p id="arr"></p>
         <!-- Colored raised button -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="Order()">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="test()">
           Order!
         </button>
       </div>
-      
       </form>
       <div class="information">
         <br />
         <hr />
-        <p>We don't serve the real pizza, we provide only reciept :)</p>
+        <p>We don't serve the real pizza, we provide only reciept </p>
         <p style="float: right; position: relative; right: 40px;"> Customer Inquiry mail : yoochanai12@gmail.com</p>
       </div>
   </div>
