@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="The information program, in JS" />
+  <meta name="author" content="Yoochan Han" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <title>GOAT Pizza</title>
+</head>
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">GOAT Pizza!</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <form action="#" class="text-box">
+        <div style="position: relative; left: 20px;">
+        <img src="./BCPTPizza.png" alt="BaconPotatoPizza">
+        <h4>Bacon Potato Pizza</h4>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+          <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="L" checked>
+          <span class="mdl-radio__label">L size(20.99$)</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+          <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="XL">
+          <span class="mdl-radio__label">XL size(25.99$)</span>
+        </label>
+        <hr />
+        <br />
+        <p>Extra Topping</p>
+        <br />
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+          <span class="mdl-checkbox__label">Extra cheese(+1.00$)</span>
+        </label>
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+          <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+          <span class="mdl-checkbox__label">Extra Bacon(+1.50$)</span>
+        </label>
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+          <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
+          <span class="mdl-checkbox__label">Extra potato(+1.00$)</span>
+        </label>
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+          <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" checked>
+          <span class="mdl-checkbox__label">Extra pineapple(+1.20$)</span>
+        </label>
+        <!-- Colored raised button -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="Order()">
+          Order!
+        </button>
+      </div>
+      
+      </form>
+      <div class="information">
+        <br />
+        <hr />
+        <p>We don't serve the real pizza, we provide only reciept :)</p>
+        <p style="float: right; position: relative; right: 40px;"> Customer Inquiry mail : yoochanai12@gmail.com</p>
+      </div>
+  </div>
+  </main>
+  </div>
+</body>
+</html>
