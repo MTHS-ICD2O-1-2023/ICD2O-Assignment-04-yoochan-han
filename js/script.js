@@ -7,7 +7,6 @@ function orderThePizza() {
   // total cost is float number
   let totalCost = 0.00
   let topping = []
-  let listOfOrder = []
   let pizzatype
   let pizzaSize
   const cheesePizza = document.getElementById("pizzaType-1").checked
@@ -43,8 +42,7 @@ function orderThePizza() {
     }
   }
   totalCost = totalCost + totalCost*0.13
-  alert(totalCost)
   //print total cost
-  document.getElementById("test").innerHTML = "The total cost of pizza is " + totalCost.toFixed(2) + "$"
+  document.getElementById("cost").innerHTML = "You ordered " + pizzaSize + pizzatype +"The total cost of pizza is " + totalCost.toFixed(2) + "$"
 }
 
