@@ -17,16 +17,6 @@ p {
   left: 30px;
 }
 
-h2 {
-  color: darkgreen;
-  font-style: oblique;
-}
-
-#TheAnswer {
-  position: relative;
-  left: 30px;
-}
-
 .right-image {
   position: relative;
   width: 1%;
