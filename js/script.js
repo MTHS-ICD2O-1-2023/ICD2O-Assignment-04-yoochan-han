@@ -6,16 +6,20 @@
 function orderThePizza() {
   // total cost is float number
   let totalCost = 0.00
-  let topping = []
   let pizzatype
   let pizzaSize
+  const tax = 0.13
   const cheesePizza = document.getElementById("pizzaType-1").checked
   const baconPotatoPizza = document.getElementById("pizzaType-2").checked
   const size = document.getElementById("size-1").checked
   // get toppings information as array (T or F)
-  for (i = 1; i < 5; i++) {
-    topping.push(document.getElementById("checkbox-" + String(i)).checked)
-  }
+  // for (i = 1; i < 5; i++) {
+  //   topping.push(document.getElementById("checkbox-" + String(i)).checked)
+  // }
+  const topping1 = document.getElementById("checkbox-1").checked
+  const topping2 = document.getElementById("checkbox-2").checked
+  const topping3 = document.getElementById("checkbox-3").checked
+  const topping4 = document.getElementById("checkbox-4").checked
   //get pizza type 
   //calculate the total cost
   if (cheesePizza == true) {
@@ -36,13 +40,16 @@ function orderThePizza() {
     totalCost += 4.00
   }
   //get topping
-  for (l = 0; l < 4; l++) {
-    if (topping[l] == true) {
-      totalCost += 1.00 + 0.20 * l
-    }
+  // for (l = 0; l < 4; l++) {
+  //   if (topping[l] == true) {
+  //     totalCost += 1.00 + 0.20 * l
+  //   }
+  // }
+  if (topping1 == 1) {
+    totalCost += 1.0
   }
-  totalCost = totalCost + totalCost*0.13
+  totalCost = totalCost + totalCost*tax
   //print total cost
-  document.getElementById("cost").innerHTML = "You ordered " + pizzaSize + pizzatype +"The total cost of pizza is " + totalCost.toFixed(2) + "$"
+  document.getElementById("cost").innerHTML =pizzatype +"The total cost of pizza is " + totalCost.toFixed(2) + "$"
 }
 
